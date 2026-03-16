@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Dip Tarafdar | Web Developer</title>
+    <style>
+        /* CSS Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7fb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header / Hero Section */
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Section Titles */
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #1e3c72;
+        }
+
+        /* Pricing Grid (The requested value grid) */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .pricing-card {
+            background: white;
+            border-radius: 12px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+
+        .pricing-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: #2a5298;
+        }
+
+        /* Highlight middle card */
+        .pricing-card.featured::before {
+            background: #ff512f;
+        }
+        
+        .pricing-card.featured {
+            border: 2px solid #ff512f;
+        }
+
+        .plan-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .plan-price {
+            font-size: 2.5rem;
+            color: #2a5298;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .plan-currency {
+            font-size: 1rem;
+            color: #666;
+            font-weight: normal;
+        }
+
+        .plan-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 30px;
+            background: #2a5298;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .plan-btn:hover {
+            background: #1e3c72;
+        }
+
+        .featured .plan-btn {
+            background: #ff512f;
+        }
+
+        .featured .plan-btn:hover {
+            background: #dd3e1e;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #1e3c72;
+        }
+
+        .contact-info p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .social-links {
+            list-style: none;
+        }
+
+        .social-links li {
+            margin-bottom: 15px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: #2a5298;
+            font-weight: bold;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-form {
+            flex: 1;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-form input, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        .contact-form input:focus, 
+        .contact-form textarea:focus {
+            border-color: #2a5298;
+        }
+
+        .contact-form button {
+            padding: 15px;
+            background: #2a5298;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .contact-form button:hover {
+            background: #1e3c72;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e3c72;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Hire Dip Tarafdar</h1>
+        <p>Professional Web Development & Design Services</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Pricing / Value Grid Section -->
+        <h2 class="section-title">Investment Plans</h2>
+        
+        <div class="pricing-grid">
+            <!-- Plan 1 -->
+            <div class="pricing-card">
+                <div class="plan-name">Designing Single Website</div>
+                <div class="plan-price">699 <span class="plan-currency">BDT</span></div>
+                <p>Perfect for a personal portfolio, landing page, or a basic business website. Clean, responsive, and tailored to your needs.</p>
+                <a href="#contact" class="plan-btn">Select Plan</a>
+            </div>
+
+            <!-- Plan 2 (Featured) -->
+            <div class="pricing-card featured">
+                <div class="plan-name">One Week Holder</div>
+                <div class="plan-price">1,999 <span class="plan-currency">BDT</span></div>
+                <p>Hire me exclusively for a full week. Ideal for medium-sized projects, UI/UX overhauls, and standard web application development.</p>
+                <a href="#contact" class="plan-btn">Select Plan</a>
+            </div>
+
+            <!-- Plan 3 -->
+            <div class="pricing-card">
+                <div class="plan-name">Full Month Hiring</div>
+                <div class="plan-price">29,999 <span class="plan-currency">BDT</span></div>
+                <p>Dedicated full-time development for an entire month. Best for complex applications, ongoing maintenance, and large-scale projects.</p>
+                <a href="#contact" class="plan-btn">Select Plan</a>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <h2 class="section-title" id="contact">Get In Touch</h2>
+        <div class="contact-section">
+            
+            <!-- Contact Info (Based on provided link context) -->
+            <div class="contact-info">
+                <h3>Contact Dip</h3>
+                <p>Ready to start your project? Fill out the form or reach out to me directly through my developer profiles. Let's build something amazing together.</p>
+                
+                <ul class="social-links">
+                    <li>
+                        <a href="https://diptarafd3t-cell.github.io/Contact-me-Dip/" target="_blank">
+                            🌐 View Official Contact Page
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/diptarafd3t-cell" target="_blank">
+                            💻 Check out my GitHub
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact Form -->
+            <form class="contact-form" action="#" method="POST">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email Address" required>
+                <select style="padding: 15px; border: 1px solid #ddd; border-radius: 8px; font-size: 1rem; outline: none; background: white;" required>
+                    <option value="" disabled selected>Select a Service</option>
+                    <option value="single_website">Designing Single Website - 699 BDT</option>
+                    <option value="one_week">One Week Holder - 1999 BDT</option>
+                    <option value="full_month">Full Month Hiring - 29999 BDT</option>
+                    <option value="other">Other Inquiry</option>
+                </select>
+                <textarea rows="5" placeholder="Tell me about your project..." required></textarea>
+                <button type="submit">Send Message to Dip</button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Dip Tarafdar. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
